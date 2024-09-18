@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* --primary: #00d991; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,5 +24,18 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* For rgb(255 115 179 / 1) */
+    --color-primary: 255 115 179;
+
+    /* For hsl(333deg 100% 73% / 1) */
+    --color-primary: 333deg 100% 73%;
+
+    /* For rgba(255, 115, 179, 1) */
+    --color-primary: 255, 115, 179;
   }
 }

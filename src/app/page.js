@@ -2,100 +2,202 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="font-[family-name:var(--font-sora)]">
+      <main className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+              Latest
+            </h1>
+            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+              A blog created with Next.js and Tailwind.css
+            </p>
+          </div>
+          <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+            <li className="py-12">
+              <article>
+                <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                  <dl>
+                    <dt className="sr-only">Published on</dt>
+                    <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                      <time datetime="2023-08-05T00:00:00.000Z">August 5, 2023</time>
+                    </dd>
+                  </dl>
+                  <div className="space-y-5 xl:col-span-3">
+                    <div className="space-y-6">
+                      <div>
+                        <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                          <a
+                            className="text-gray-900 dark:text-gray-100"
+                            href="/blog/release-of-tailwind-nextjs-starter-blog-v2.0"
+                          >
+                            Release of Tailwind Nextjs Starter Blog v2.0
+                          </a>
+                        </h2>
+                        <div className="flex flex-wrap">
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/next-js"
+                          >
+                            next-js
+                          </a>
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/tailwind"
+                          >
+                            tailwind
+                          </a>
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/guide"
+                          >
+                            guide
+                          </a>
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/feature"
+                          >
+                            feature
+                          </a>
+                        </div>
+                      </div>
+                      <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        Release of Tailwind Nextjs Starter Blog template v2.0, refactored with Nextjs App directory and
+                        React Server Components setup.Discover the new features and how to migrate from V1.
+                      </div>
+                    </div>
+                    <div className="text-base font-medium leading-6">
+                      <a
+                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                        aria-label='Read more: "Release of Tailwind Nextjs Starter Blog v2.0"'
+                        href="/blog/release-of-tailwind-nextjs-starter-blog-v2.0"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li className="py-12">
+              <article>
+                <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                  <dl>
+                    <dt className="sr-only">Published on</dt>
+                    <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                      <time datetime="2021-08-07T15:32:14.000Z">August 7, 2021</time>
+                    </dd>
+                  </dl>
+                  <div className="space-y-5 xl:col-span-3">
+                    <div className="space-y-6">
+                      <div>
+                        <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                          <a className="text-gray-900 dark:text-gray-100" href="/blog/new-features-in-v1">
+                            New features in v1
+                          </a>
+                        </h2>
+                        <div className="flex flex-wrap">
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/next-js"
+                          >
+                            next-js
+                          </a>
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/tailwind"
+                          >
+                            tailwind
+                          </a>
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/guide"
+                          >
+                            guide
+                          </a>
+                        </div>
+                      </div>
+                      <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        An overview of the new features released in v1 - code block copy, multiple authors, frontmatter
+                        layout and more
+                      </div>
+                    </div>
+                    <div className="text-base font-medium leading-6">
+                      <a
+                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                        aria-label='Read more: "New features in v1"'
+                        href="/blog/new-features-in-v1"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li className="py-12">
+              <article>
+                <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                  <dl>
+                    <dt className="sr-only">Published on</dt>
+                    <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                      <time datetime="2021-05-02T00:00:00.000Z">May 2, 2021</time>
+                    </dd>
+                  </dl>
+                  <div className="space-y-5 xl:col-span-3">
+                    <div className="space-y-6">
+                      <div>
+                        <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                          <a
+                            className="text-gray-900 dark:text-gray-100"
+                            href="/blog/nested-route/introducing-multi-part-posts-with-nested-routing"
+                          >
+                            Introducing Multi-part Posts with Nested Routing
+                          </a>
+                        </h2>
+                        <div className="flex flex-wrap">
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/multi-author"
+                          >
+                            multi-author
+                          </a>
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/next-js"
+                          >
+                            next-js
+                          </a>
+                          <a
+                            className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                            href="/tags/feature"
+                          >
+                            feature
+                          </a>
+                        </div>
+                      </div>
+                      <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        The blog template supports posts in nested sub-folders. This can be used to group posts of
+                        similar content e.g. a multi-part course. This post is itself an example of a nested route!
+                      </div>
+                    </div>
+                    <div className="text-base font-medium leading-6">
+                      <a
+                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                        aria-label='Read more: "Introducing Multi-part Posts with Nested Routing"'
+                        href="/blog/nested-route/introducing-multi-part-posts-with-nested-routing"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <footer className=""></footer>
     </div>
   );
 }
