@@ -1,3 +1,4 @@
+import localFont from "next/font/local";
 import { Sora } from "next/font/google";
 import "./globals.css";
 
