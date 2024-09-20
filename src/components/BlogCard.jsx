@@ -25,10 +25,7 @@ export default function BlogCard({ article }) {
                 </span>
               </div>
             </div>
-            <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-              Release of Tailwind Nextjs Starter Blog template v2.0, refactored with Nextjs App directory and React
-              Server Components setup.Discover the new features and how to migrate from V1.
-            </div>
+            <div className="prose max-w-none text-gray-500 dark:text-gray-400">{article.description}</div>
           </div>
           <div className="text-base font-medium leading-6">
             <Link
