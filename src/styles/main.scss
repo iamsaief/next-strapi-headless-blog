@@ -1,0 +1,15 @@
+article.blog-details {
+  :is(h2, h3, h4) {
+    letter-spacing: -0.025em;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    line-height: 1.3333333;
+  }
+  p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+}

@@ -5,7 +5,6 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  /* --primary: #00d991; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +17,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -27,15 +25,4 @@ body {
   }
 }
 
-@layer base {
-  :root {
-    /* For rgb(255 115 179 / 1) */
-    --color-primary: 255 115 179;
-
-    /* For hsl(333deg 100% 73% / 1) */
-    --color-primary: 333deg 100% 73%;
-
-    /* For rgba(255, 115, 179, 1) */
-    --color-primary: 255, 115, 179;
-  }
-}
+@import "./main.scss";
